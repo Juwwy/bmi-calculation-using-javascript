@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMI Challenge</title>
+</head>
+<body>
+    <h1>Welcome to BMI challenge page</h1>
+    <p>This section keep record and compute Body Mass index</p>
+
+
+
+
+
+
+<script>
+var bmi1;
+var bmi2;
+var mass;
+var height;
+var mark;
+var john
+
+var mass1, height1;
+
+// bmi1 = mass1 / (height1 * height1);
+// bmi2 = mass /(height * height);
+mark = bmi1;
+john = bmi2;
+
+
+
+function measureBoth(){
+prompt("Hello Mark we will like to keep record for your bmi, so kindly drop value for measurement scale provided next. Are you ready?" );
+
+
+
+
+mass = prompt("mass");
+height = prompt ("height");
+var massCheck = Number(mass)
+var heightCheck = Number(height) * Number(height);
+
+bmi1 = massCheck/heightCheck;
+mark = bmi1;
+
+alert(mark);
+
+prompt("Next let keep John's BMI data, John are you ready");
+prompt("Yo! John we will like to keep record for your BMI Data, so kindly drop value for measurement scale provided next. Are you ready?" );
+
+
+
+
+mass1 = prompt("mass");
+height1 = prompt ("height");
+var massCheck1 = Number(mass1)
+var heightCheck1 = Number(height1) * Number(height1);
+
+bmi2 = massCheck1/heightCheck1;
+john = bmi2;
+
+alert(john);{
+    if (mark > john){
+        alert(true);
+    }else if(mark < john){
+        alert(false);
+    } else if(mark == john){
+        alert("There is an equaliser in BMI data!");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// john = bmi2;
+// bmi2 = mass /(height * height);
+// bmi1 = mass1/(height1 * height1);
+// mark = bmi1;
+
+
+
+}
+
+console.log(measureBoth());
+
+</script>
+</body>
+</html>
